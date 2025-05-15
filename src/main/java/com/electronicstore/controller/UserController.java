@@ -1,5 +1,6 @@
 package com.electronicstore.controller;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
 import com.electronicstore.dtos.ApiResponseMessage;
 import com.electronicstore.dtos.UserDto;
 import com.electronicstore.service.UserService;
@@ -84,6 +85,8 @@ public class UserController {
     public ResponseEntity<List<UserDto>> searchUser(@PathVariable String keywords){
 
         return new ResponseEntity<>(userService.searchUser(keywords),HttpStatus.OK);
+
+
     }
 
 }

@@ -9,6 +9,7 @@ public class HomeController {
 
     public String testing(){
         System.out.println("hello");
+        System.out.println("helllllllo");
         return "welcome to store";
     }
 }
